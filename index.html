@@ -1,61 +1,381 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
-    <title>Promises</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Document</title>
 </head>
 <body>
-    <div class="container mt-3">
-        <h3>Fecth Data With Custom Promises</h3>
+  <div class="nav" id="nav">
+    <div class="logo">
+      <a href="./index.html">Home</a>
 
-      
-        <div id="accordion">
-          <div class="card">
-            <div class="card-header">
-              <a class="btn" data-bs-toggle="collapse" href="#collapseOne" id="title">
-                Collapsible Group Item #1
-              </a>
-            </div>
-            <div id="collapseOne" class="collapse" data-bs-parent="#accordion">
-              <div class="card-body">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-header">
-              <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
-              Collapsible Group Item #2
-            </a>
-            </div>
-            <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
-              <div class="card-body">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-header">
-              <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
-                Collapsible Group Item #3
-              </a>
-            </div>
-            <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
-              <div class="card-body">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              </div>
-            </div>
+    </div>
+
+  </div>
+
+  <div class="container" id="container">
+    <div class="row1">
+      <div class="card">
+        <div class="box">
+          <div class="content">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Reuters_Logo.svg/1280px-Reuters_Logo.svg.png" alt="" height="80" width="200">
+   
+            <h3>REUTER</h3>
+            <p>News of all about bitcoin from reuters.</p>
+            <a href="javascript:void(0)" onClick="display()">Check Out</a>
+
           </div>
         </div>
       </div>
-          
-    
+      
 
-    <script src="./app.js"></script>
+      <!-- Card 2 -->
+      <div class="card">
+        <div class="box">
+          <div class="content">
+            <img src="https://download.logo.wine/logo/BBC_News/BBC_News-Logo.wine.png" alt="" height="150" width="250">
+
+            <h3>BBC NEWS</h3>
+            <p>News of all about bitcoin from BBC News.</p>
+            <a href="javascript:void(0)" onClick="display2()">Check Out</a>
+
+          </div>
+        </div>
+      </div>
+      
+      <!-- Card 3 -->
+      <div class="card">
+        <div class="box">
+          <div class="content">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Business_Insider_logo.png" alt="" height="150" width="250">
+
+            <h3>BUISNESS INSIDER</h3>
+            <p>News of all about bitcoin from BBC News.</p>
+            <a href="javascript:void(0)" onClick="display3()">Check Out</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <!-- Card 4 -->
+      <div class="card">
+        <div class="box">
+          <div class="content">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8I_KM2YIFe5e96nlM5QM7iBLgL-Rlbzc0emDMFd7imQ&s" alt="" height="150" width="200">
+
+            <h3>Vice NEWS</h3>
+            <p>News of all about bitcoin from BBC News.</p>
+            <a href="javascript:void(0)" onClick="display4()">Check Out</a>
+
+          </div>
+        </div>
+      </div>
+
+
+        <!-- Card 5 -->
+        <div class="card">
+          <div class="box">
+            <div class="content">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA1KfL-EZacnV3b0KRLzK7155uzsu2ytueQpkxc1tGJA&s" alt="" height="150" width="250">
+              <h3>Journal du geek NEWS</h3>
+              <p>News of all about bitcoin from BBC News.</p>
+              <a href="javascript:void(0)" onClick="display5()">Check Out</a>
+  
+            </div>
+          </div>
+        </div>
+        
+
+        <!-- Card 6 -->
+        <div class="card">
+          <div class="box">
+            <div class="content">
+
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCOvj9i742O_DOfWZ_SiUjN0F31mCsEgcD8mbXoZPH&s" alt="" height="150" width="250">
+              <h3>Slashdot.org NEWS</h3>
+              <p>News of all about bitcoin from BBC News.</p>
+              <a href="javascript:void(0)" onClick="display6()">Check Out</a>
+  
+            </div>
+          </div>
+        </div>
+        
+        <!-- Card 7 -->
+        <div class="card">
+          <div class="box">
+            <div class="content">
+
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdTu2V6NxXvMgEYxebFiQKjvrXTIYfnc_LyFHDB-ZsSw&s" alt="" height="150" width="250">
+              <h3>Entrepreneur NEWS</h3>
+              <p>News of all about bitcoin from BBC News.</p>
+              <a href="javascript:void(0)" onClick="display7()">Check Out</a>
+  
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="card">
+          <div class="box">
+            <div class="content">
+
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMr5bZqEoSB-45-WpDwoAgPZh7oJqgjn1eLBZCrxwqOQ&s" alt="" height="150" width="250">
+              <h3>Gizmodo NEWS</h3>
+              <p>News of all about bitcoin from BBC News.</p>
+              <a href="javascript:void(0)" onClick="display8()">Check Out</a>
+  
+            </div>
+          </div>
+        </div>
+        
+        <!-- Card 9 -->
+        <div class="card">
+          <div class="box">
+            <div class="content">
+
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH3Voe2gDaTJe9H6GFIapL7YTCxodO5opUTQ7CU4W1mA&s" alt="" height="150" width="250">
+              <h3>Guardian NEWS</h3>
+              <p>News of all about bitcoin from BBC News.</p>
+              <a href="javascript:void(0)" onClick="display9()">Check Out</a>
+  
+            </div>
+          </div>
+        </div>
+        
+        <!-- Card 10 -->
+        <div class="card">
+          <div class="box">
+            <div class="content">
+
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSO66RHk8uYdBFHWyOlhYCHF85ap9XRzc_E0DT3sZgVsw&s" alt="" height="150" width="250">
+              <h3>Wired NEWS</h3>
+              <p>News of all about bitcoin from BBC News.</p>
+              <a href="javascript:void(0)" onClick="display10()">Check Out</a>
+  
+            </div>
+          </div>
+        </div>
+         
+        <!-- Card 11 -->
+        <div class="card">
+          <div class="box">
+            <div class="content">
+
+              <img src="https://icon2.cleanpng.com/20180327/ykw/kisspng-united-states-time-s-person-of-the-year-magazine-w-time-5aba2e0a3181d5.6232491615221509222028.jpg" alt="" height="100" width="250">
+              <h3>Time NEWS</h3>
+              <p>News of all about bitcoin from BBC News.</p>
+              <a href="javascript:void(0)" onClick="display11()">Check Out</a>
+  
+            </div>
+          </div>
+        </div>
+          
+        <!-- Card 12 -->
+        <div class="card">
+          <div class="box">
+            <div class="content">
+
+              <img src="https://e7.pngegg.com/pngimages/910/677/png-clipart-c-net-logo-cnet-logo-icons-logos-emojis-tech-companies-thumbnail.png" alt="" height="150" width="250">
+              <h3>CNET NEWS</h3>
+              <p>News of all about bitcoin from BBC News.</p>
+              <a href="javascript:void(0)" onClick="display12()">Check Out</a>
+  
+            </div>
+          </div>
+        </div>
+          
+        <!-- Card 13 -->
+        <!-- <div class="card">
+          <div class="box">
+            <div class="content">
+              <img src="" alt="" id="image">
+              <h3>VentureBeat NEWS</h3>
+              <p>News of all about bitcoin from BBC News.</p>
+              <a href="javascript:void(0)" onClick="display13()">Check Out</a>
+  
+            </div>
+          </div>
+        </div> -->
+            
+        <!-- Card 14 -->
+        <div class="card">
+          <div class="box">
+            <div class="content">
+
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKpIV7xcq7qxfnV7_J8u0JZnPI3DJbdRz69-uKih0O-Q&s" alt="" height="150" width="250">
+              <h3>Substack.com NEWS</h3>
+              <p>News of all about bitcoin from BBC News.</p>
+              <a href="javascript:void(0)" onClick="display14()">Check Out</a>
+  
+            </div>
+          </div>
+        </div>
+        
+         <!-- Card 15 -->
+         <div class="card">
+          <div class="box">
+            <div class="content">
+
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXsNeo9Wi9CVXVMylinQSjnMghUrNRCqKvy7PB0SzFWQ&s" alt="" height="150" width="250">
+              <h3>Insiderintelligence.com NEWS</h3>
+              <p>News of all about bitcoin from BBC News.</p>
+              <a href="javascript:void(0)" onClick="display15()">Check Out</a>
+  
+            </div>
+          </div>
+        </div>
+          
+         <!-- Card 16 -->
+         <div class="card">
+          <div class="box">
+            <div class="content">
+
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMsfH0jsCe_oLa0s3-oyBaRDPcqd7Bzf09ndLqVlaTUw&s" alt="" height="150" width="250">
+              <h3>Heise online NEWS</h3>
+              <p>News of all about bitcoin from BBC News.</p>
+              <a href="javascript:void(0)" onClick="display16()">Check Out</a>
+  
+            </div>
+          </div>
+        </div>
+          
+         <!-- Card 17 -->
+         <div class="card">
+          <div class="box">
+            <div class="content">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVPpcEU9oTmsSgc0VxUEy-CAPkdCuPb9vfj_BhtUyjMw&s" alt="" height="150" width="250">
+              <h3>Techinsights.com NEWS</h3>
+              <p>News of all about bitcoin from BBC News.</p>
+              <a href="javascript:void(0)" onClick="display17()">Check Out</a>
+  
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 18 -->
+        <div class="card">
+          <div class="box">
+            <div class="content">
+              <img src="https://barron.com/img/header-logo-scroll.svg" alt="" height="150" width="250">
+              <h3>Barron's NEWS</h3>
+              <p>News of all about bitcoin from BBC News.</p>
+              <a href="javascript:void(0)" onClick="display18()">Check Out</a>
+  
+            </div>
+          </div>
+        </div>
+        
+        <!-- Card 19 -->
+        <div class="card">
+          <div class="box">
+            <div class="content">
+              <img src="https://www.freepnglogos.com/uploads/yahoo-logo-png/yahoo-logo-png-free-download-3.png" alt="" height="100" width="250">
+              <h3>Yahoo Entertainment NEWS</h3>
+              <p>News of all about bitcoin from BBC News.</p>
+              <a href="javascript:void(0)" onClick="display19()">Check Out</a>
+  
+            </div>
+          </div>
+        </div>
+        
+        <!-- Card 20 -->
+        <div class="card">
+          <div class="box">
+            <div class="content">
+              <img src="https://www.makeuseof.com/public/build/images/muo-amp-logo.2eef8ce3.png" alt="" height="150" width="250">
+              <h3>MakeUseOf NEWS</h3>
+              <p>News of all about bitcoin from BBC News.</p>
+              <a href="javascript:void(0)" onClick="display20()">Check Out</a>
+  
+            </div>
+          </div>
+        </div>
+               
+        <!-- Card 21 -->
+        <div class="card">
+          <div class="box">
+            <div class="content">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/VentureBeat_VB_Logo.png" alt="" height="100" width="250">
+              <h3>VentureBeat NEWS</h3>
+              <p>News of all about bitcoin from BBC News.</p>
+              <a href="javascript:void(0)" onClick="display21()">Check Out</a>
+  
+            </div>
+          </div>
+        </div>
+               
+        <!-- Card 22 -->
+        <div class="card">
+          <div class="box">
+            <div class="content">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Spiegel-Online-Logo.svg/2560px-Spiegel-Online-Logo.svg.png" alt="" height="100" width="200">
+              <h3>Spiegel Online NEWS</h3>
+              <p>News of all about bitcoin from BBC News.</p>
+              <a href="javascript:void(0)" onClick="display22()">Check Out</a>
+  
+            </div>
+          </div>
+        </div>
+        
+
+
+
+  </div>
+  
+
+<div class="another-body">
+  <div id="reuterData"></div>
+  <div id="bbcData"></div>
+  <div id="insiderData"></div>
+  <div id="viceData"></div>
+  <div id="geekData"></div>
+  <div id="slashData"></div>
+  <div id="entData"></div>
+  <div id="gizmodoData"></div>
+  <div id="guardianData"></div>
+  <div id="wiredData"></div>
+    <!-- To DO -->
+
+  <div id="timeData"></div>
+  <div id="cnetData"></div>
+  <div id="substackData"></div>
+  <div id="intelligenceData"></div>
+  <div id="heiseData"></div>
+  <div id="insightData"></div>
+  <div id="barronsData"></div>
+  <div id="yahooData"></div>
+  <div id="useOfData"></div>
+  <div id="ventureData"></div>
+  <div id="spiegelData"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+  
+
+  <script src="./app.js"></script>
 </body>
 </html>
